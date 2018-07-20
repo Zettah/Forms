@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="us">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Sign Up Form </title>
+<!-- this below is simply a font taken from the internet to create a prettier visual. -->
+
+<link href='http://fonts.googleapis.com/css?family=nunito:400,300' rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<!-- above we are connecting our css style sheet to be linked with this html page in order to create a form column for this page with interest options to select age and more. -->
+
+<body>
+
+  <form action="index.html" method="post">
+    <h1> sign up </h1>
+    <fieldset>
+      <legend><span class="number">1</span> Your basic info </legend>
+      <label for="name"> Name: </label>
+      <input type="text" id="name" name="user_name">
+
+
+      <label for="mail"> Email: </label>
+      <input type="email" id="mail" name="user_email">
+
+      <label for="password"> Password: </label>
+      <input type="password" id="password" name="user_password">
+
+
+      <label> AGE : </label>
+      <input type="radio" id="under_13" value="under_13" name="user_age">
+      <label for="under_13" class="light"> Under 13 </label><br>
+
+
+      <input type="radio" id="over_13" value="over_13" name="user_age">
+      <label for="over_13" class="light"> 13 or older </label>
+    </fieldset>
+<!-- all of these above are for the user to give in thier name email password and age to be apart of the basic information section of this page to get to know the visitor connecting
+to our domain.......Ya Dig !! -->
+
+    <fieldset>
+      <legend><span class="number">2</span> Your Profile </legend>
+      <label for="bio"> Biography: </label>
+      <textarea id="bio" name="user_bio"></textarea>
+      <label for="job"> Job Role: </label>
+      <select id="job" name="user_job">
+        <optgroup label="web">
+          <option value="frontend_developer">Front-End Developer </option>
+          <option value="php_developer">PHP Developer</option>
+          <option value="python_developer">Python Developer</option>
+          <option value="rails_developer">Rails Developer</option>
+          <option value="web_designer">Web Designer</option>
+          <option value="wordpress_developer">WordPress Developer</option>
+          <option value=""></option>
+        </optgroup>
+
+        <optgroup label="Moblie">
+          <option value="andriod_developer">Andriod Developer</option>
+          <option value="ios_developer">Iso Developer</option>
+          <option value="moblie_designer">Moblie Designer</option>
+        </optgroup>
+
+        <optgroup label="Business">
+          <option value="business_owner">Business Owner</option>
+          <option value="freelancer">Freelancer</option>
+        </optgroup>
+      </select>
+<!-- These are all the options that are inside the job role to give different type of answers on the job role that you desire or have
+could be used to find out the best way to connect with the visitor like moblie cellphone etc.   -->
+      <label> Interests: </label>
+      <input type="checkbox" id="development" value="interest_developer" name="user_interest">
+      <label class="light" for="development">Development </label>
+      <br>
+      <input type="checkbox" id="design" value="interest_design" name="user_interest">
+      <label class="light" for="design"> Design </label>
+      <br>
+      <input type="checkbox" id="business" value="interest_business" name="user_interest">
+      <label class="light" for="business"> Business </label>
+    </fieldset>
+
+<!-- These above are the different interest people can check like a multiple choice answer to find out more about the viewer. -->
+    <button type="submit"> Sign up </butoon>
+    </form>
+  </body>
+  <html>

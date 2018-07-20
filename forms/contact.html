@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Contact form </title>
+<meta charset="utf-8">
+<!-- using embedded style inside my html  -->
+
+<style>
+form {
+  align: center;
+  background-color: coral;
+  font-family: arial. sans-serif;
+  padding: 20px;}
+
+  label {
+  width: 100%;
+  clear: left;
+  text-align: center;
+  padding-right: 10px;
+  margin-top: 10px;
+  }
+  input, textarea {
+    float: center;
+    margin-left: 110px;
+    display: block;
+  }
+#mySubmit {
+  margin-left: 110px;
+}
+</style>
+</head>
+
+<body>
+  <h1> contact Us </h1>
+
+  <!-- Form starts here everything above was for the declaration of the form -->
+  <form method="post" action="http://webdevbasics.net/scripts/demo.php">
+    <label for=",myName"> Name: </label>
+    <input type="text" name="myName" id="myName">
+<!-- this above is the name slot are where people would place thier names prior to having an account. -->
+    <label for="myEmail"> Email: </label>
+    <input type="text" name="myEmail" id="myEmail">
+<!-- this area above is simply for the email section wheree people would then add thier emails so that you can contact them.  -->
+    <label for="myComments"> Comment: </label>
+    <textarea name="myComments" id="myComments" rows="2" cols="20"></textarea>
+    <input id="mySubmit" type="submit" value="Submit">
+    <!-- this is the area where the things get submit as well as the comment box where we can then add a comment pertaining to a a specific situation
+  pertaining to the site ofcourse. -->
+  </form>
+</body>
+</html>
